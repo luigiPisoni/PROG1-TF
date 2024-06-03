@@ -27,7 +27,6 @@ public class Universidade {
     }
 
     public void imprimirAlunos() {
-        ;
         System.out.println("--- ALUNOS ---");
         for (int i = 0; i < alunos.size(); i++) {
             System.out.println("\nNome: " + alunos.get(i).getNome());
@@ -38,7 +37,6 @@ public class Universidade {
     }
 
     public void imprimirServidores() {
-        ;
         System.out.println("--- SERVIDORES ---");
         for (int i = 0; i < servidores.size(); i++) {
             System.out.println("\nNome: " + servidores.get(i).getNome());
@@ -87,6 +85,22 @@ public class Universidade {
         this.nome = nome;
         this.endereço = endereço;
 
+    }
+
+    public int getNServidores() {
+        return servidores.size();
+    }
+
+    public int getNAlunos() {
+        return alunos.size();
+    }
+
+    public int getNBlocos() {
+        return blocos.size();
+    }
+
+    public int getNCursos() {
+        return cursos.size();
     }
 
     public ArrayList<Materia> getMateriasComuns() {
